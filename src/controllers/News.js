@@ -78,7 +78,7 @@ class NewsController {
 
     const findParams = req?.query?.search 
     ? {
-        'category': req.params.category, 
+        'type': req.params.id, 
         $or:[ 
           {
             'title':
@@ -93,7 +93,7 @@ class NewsController {
     : 
     
     {
-      'category': req.params.category
+      'type': req.params.id
     }
     await NewsModel
     .find(findParams)

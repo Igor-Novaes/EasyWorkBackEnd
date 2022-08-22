@@ -4,7 +4,7 @@ const {CategorySchema} = require('./Category')
 
 
 const NewsSchema = new Schema({
-  category:
+  type:
   {
     type: Schema.Types.ObjectId,
      ref: 'Category'

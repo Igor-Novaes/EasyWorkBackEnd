@@ -3,7 +3,7 @@ const router = express.Router();
 const NewsController = require("../controllers/News");
 
 
-router.get("/category/:cat", NewsController.getByCategoryID);
+router.get("/category/:id", NewsController.getByCategoryID);
 
 router.get("/", NewsController.getAll);
 
