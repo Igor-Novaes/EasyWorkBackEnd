@@ -10,7 +10,7 @@ router.post("/create", CategoryController.createCategory);
 
 router.put("/:id", CategoryController.updateCategory);
 
-router.delete("/:id", CategoryController.createCategory);
+router.delete("/:id", CategoryController.removeCategory);
 
 
 module.exports = router;
